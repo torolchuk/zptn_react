@@ -1,0 +1,12 @@
+@import '../../scss/colors.scss';
+@import '../../scss/shadow.scss';
+@import '../../scss/sizing.scss';
+
+.zpt-card {
+    &__wrapper {
+        background-color: $white;
+        padding: $padding-m;
+        border-radius: $padding-m;
+        box-shadow: #{shadow-s($black)}, #{shadow-xl($black)};
+    }
+}

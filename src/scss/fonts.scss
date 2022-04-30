@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+// PRIMARY FONT MIXINS
+@mixin font-primary-200 { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 200;
+}
+@mixin font-primary-200-italic { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+@mixin font-primary-300 { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+}
+@mixin font-primary-300-italic { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@mixin font-primary-400 { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+}
+@mixin font-primary-400-italic { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@mixin font-primary-500 { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+}
+@mixin font-primary-500-italic { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@mixin font-primary-600 { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+}
+@mixin font-primary-600-italic { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@mixin font-primary-700 { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+}
+@mixin font-primary-700-italic { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@mixin font-primary-800 { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+}
+@mixin font-primary-800-italic { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+@mixin font-primary-900 { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+}
+@mixin font-primary-900-italic { 
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+
+// ACCENT FONT MIXINS
+@mixin font-accent-300 { 
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
+@mixin font-accent-300-italic { 
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@mixin font-accent-400 { 
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+@mixin font-accent-400-italic { 
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@mixin font-accent-700 { 
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+@mixin font-accent-700-italic { 
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@mixin font-accent-900 { 
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+@mixin font-accent-900-italic { 
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-style: italic;
+}

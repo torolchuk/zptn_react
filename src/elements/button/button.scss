@@ -1,0 +1,71 @@
+@import '../../scss/colors.scss';
+@import '../../scss/sizing.scss';
+@import '../../scss/shadow.scss';
+@import '../../scss/fonts.scss';
+
+.zpt-button {
+    &__main-element {
+        $main-color: $black;
+        $second-color: $white;
+
+        display: inline-flex;
+        align-items: center;
+        border: none;
+        box-shadow: shadow-m($black);
+        @include font-primary-200;
+        border-radius: $padding-xl;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+        letter-spacing: .2px;
+
+        &__primary {
+            background-color: $black;
+            color: $white;
+        
+            &:hover {
+                background-color: lighten($black, 15);
+                box-shadow: shadow-l($black);
+            }
+
+            &:disabled {
+                background-color: lighten($black, 30);
+                box-shadow: none;
+                cursor: default;
+            }
+        }
+
+        &__secondary {
+            background-color: $white;
+            color: $black;
+            @include font-primary-300;
+
+            &:hover {
+                background-color: $white;
+            }
+        
+            &:disabled {
+                background-color: $white;
+                color: lighten($black, 50);
+                box-shadow: shadow-s(lighten($black, 50));
+            }
+        }
+
+        &__small {
+            height: #{$base-padding * 3}px;
+            padding: 0 $padding-s;
+            font-size: $fontsize-s;
+        }
+
+        &__medium {
+            height: #{$base-padding * 4}px;
+            padding: 0 $padding-m;
+            font-size: $fontsize-m;
+        }
+
+        &__large {
+            height: #{$base-padding * 6}px;
+            padding: 0 $padding-l;
+            font-size: $fontsize-l;
+        }
+    }
+}

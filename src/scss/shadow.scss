@@ -1,0 +1,23 @@
+@function compose-shadow($color, $base-size) {
+    @return 0 #{$base-size}px #{$base-size*4}px 0 rgba($color, .2); 
+}
+
+@function shadow-s($color) {
+    @return compose-shadow($color, 1);
+}
+
+@function shadow-m($color) {
+    @return compose-shadow($color, 2);
+}
+
+@function shadow-l($color) {
+    @return compose-shadow($color, 4);
+}
+
+@function shadow-xl($color) {
+    @return compose-shadow($color, 8);
+}
+
+@function shadow-xxl($color) {
+    @return compose-shadow($color, 16);
+}

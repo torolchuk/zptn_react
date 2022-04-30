@@ -1,0 +1,13 @@
+@import '../../scss/colors.scss';
+@import '../../scss/sizing.scss';
+@import '../../scss/fonts.scss';
+
+.zpt-text {
+    &__main-element {
+        color: lighten($black, 20);
+        font-size: $fontsize-m;
+        letter-spacing: -.1px;
+        line-height: 1.4;
+        @include font-primary-400;
+    }
+}

@@ -1,0 +1,13 @@
+$base-padding:  8;
+
+$padding-xs:     #{$base-padding / 2}px;
+$padding-s:     #{$base-padding}px;
+$padding-m:     #{$base-padding * 2}px;
+$padding-l:     #{$base-padding * 4}px;
+$padding-xl:    #{$base-padding * 8}px;
+
+$fontsize-s:    12px;
+$fontsize-m:    16px;
+$fontsize-l:    24px;
+$fontsize-xl:   32px;
+$fontsize-xxl:  48px;

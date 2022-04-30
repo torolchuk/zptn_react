@@ -1,0 +1,36 @@
+@import '../../scss/colors.scss';
+@import '../../scss/sizing.scss';
+@import '../../scss/fonts.scss';
+
+.zpt-heading {
+    &__wrapper {
+        padding: 0;
+        margin: 0;
+        color: $black;
+
+        &__h1 {
+            font-size: $fontsize-xxl;
+            @include font-accent-900-italic;
+        }
+
+        &__h2 {
+            font-size: $fontsize-xl;
+            @include font-accent-900-italic;
+        }
+
+        &__h3 {
+            font-size: $fontsize-l;
+            @include font-accent-900-italic;
+        }
+
+        &__h4 {
+            font-size: $fontsize-m;
+            @include font-accent-900-italic;
+        }
+
+        &__h5 {
+            font-size: $fontsize-s;
+            @include font-accent-900-italic;
+        }
+    }
+}
