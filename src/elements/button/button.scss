@@ -5,13 +5,13 @@
 
 .zpt-button {
     &__main-element {
-        $main-color: $black;
-        $second-color: $white;
+        $main-color: $accent-a;
+        $second-color: $bg-main;
 
         display: inline-flex;
         align-items: center;
         border: none;
-        box-shadow: shadow-m($black);
+        box-shadow: shadow-m($fe-main);
         @include font-primary-200;
         border-radius: $padding-xl;
         cursor: pointer;
@@ -19,34 +19,34 @@
         letter-spacing: .2px;
 
         &__primary {
-            background-color: $black;
-            color: $white;
+            background-color: $fe-main;
+            color: $bg-main;
         
             &:hover {
-                background-color: lighten($black, 15);
-                box-shadow: shadow-l($black);
+                background-color: lighten($fe-main, 15);
+                box-shadow: shadow-l($fe-main);
             }
 
             &:disabled {
-                background-color: lighten($black, 30);
+                background-color: lighten($fe-main, 30);
                 box-shadow: none;
                 cursor: default;
             }
         }
 
         &__secondary {
-            background-color: $white;
-            color: $black;
+            background-color: $bg-main;
+            color: $fe-main;
             @include font-primary-300;
 
             &:hover {
-                background-color: $white;
+                background-color: $bg-main;
             }
         
             &:disabled {
-                background-color: $white;
-                color: lighten($black, 50);
-                box-shadow: shadow-s(lighten($black, 50));
+                background-color: $bg-main;
+                color: lighten($fe-main, 50);
+                box-shadow: shadow-s(lighten($fe-main, 50));
             }
         }
 
@@ -57,7 +57,7 @@
         }
 
         &__medium {
-            height: #{$base-padding * 4}px;
+            height: #{$base-padding * 5}px;
             padding: 0 $padding-m;
             font-size: $fontsize-m;
         }
@@ -66,6 +66,11 @@
             height: #{$base-padding * 6}px;
             padding: 0 $padding-l;
             font-size: $fontsize-l;
+        }
+        
+        &__full-width {
+            justify-content: center;
+            width: 100%;
         }
     }
 }

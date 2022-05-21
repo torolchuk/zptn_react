@@ -1,0 +1,35 @@
+@import '../../scss/colors.scss';
+@import '../../scss/fonts.scss';
+@import '../../scss/sizing.scss';
+
+.zpt-questiontitlefield {
+    &__wrapper {
+        position: relative;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        @include font-accent-900-italic;
+        font-size: $fontsize-xl;
+        padding: 0;
+        margin: 0;
+        border: none;
+        outline: none;
+        color: $fe-main;
+
+        &:after {
+            color: lighten($fe-main, 65);
+        }
+    }
+
+    &__error-circle {
+        position: absolute;
+        right: calc(#{$padding-s} + 100%);
+        width: $padding-m;
+        height: $padding-m;
+        top: 12px;
+        border-radius: $padding-m;
+        background-color: $error;
+    }
+}

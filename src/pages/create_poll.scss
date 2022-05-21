@@ -1,0 +1,12 @@
+@import '../scss/sizing.scss';
+
+.zpt-newpoll {
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__content-column {
+        padding: $padding-xl;
+    }
+}

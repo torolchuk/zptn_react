@@ -1,0 +1,43 @@
+@import '../../scss/colors';
+@import '../../scss/sizing';
+@import '../../scss/fonts';
+
+.zpt-answer-creator {
+    &__wrapper {
+
+    }
+
+    &__options-container {
+        margin-bottom: $padding-l;
+    }
+
+    &__option-item {
+        margin-bottom: $padding-m;
+        transition: .15s ease-in-out all;
+
+        &__move-down,
+        &__move-up {
+            opacity: .6;
+        }
+        
+        // &__move-up {
+        //     transform: translateY(#{$padding-s});
+        //     opacity: .6;
+        // }
+        
+        // &__move-down {
+        //     transform: translateY(-#{$padding-s});
+        //     opacity: .6;
+        // }
+    }
+
+    &__empty-state {
+        color: $fe-main;
+        margin-bottom: $padding-xl;
+        @include font-primary-400;
+    }
+
+    &__text-button {
+        @include font-primary-900-italic;
+    }
+}

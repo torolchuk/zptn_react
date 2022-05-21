@@ -1,0 +1,21 @@
+@import '../../scss/sizing.scss';
+
+.zpt-questioncreator {
+    &__wrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top-drawer {
+        flex-grow: 1;
+    }
+    
+    &__title-box {
+        margin-bottom: $padding-l;
+    }
+
+    &__bottom-drawer {
+        flex-shrink: 0;
+    }
+}

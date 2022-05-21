@@ -1,0 +1,14 @@
+.zpt-multilineinput {
+    &__root-element {
+        &:after {
+            content: attr(data-placeholder);
+            display: block;
+        }
+
+        &__not-empty {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

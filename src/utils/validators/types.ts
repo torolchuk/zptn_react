@@ -1,0 +1,1 @@
+export type ValidatorFn<ValueType, ErrorObject> = (value: ValueType) => null | ErrorObject;

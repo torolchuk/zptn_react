@@ -4,7 +4,7 @@
 
 .zpt-text {
     &__main-element {
-        color: lighten($black, 20);
+        color: lighten($fe-main, 20);
         font-size: $fontsize-m;
         letter-spacing: -.1px;
         line-height: 1.4;

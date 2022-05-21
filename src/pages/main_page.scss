@@ -1,0 +1,55 @@
+@import '../scss/colors.scss';
+@import '../scss/sizing.scss';
+
+.zpt-mainpage {
+    &__wrapper {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__container {
+        width: 800px;
+    }
+
+    &__header {
+        margin-bottom: $padding-m;
+    }
+
+    &__subheader {
+        margin-bottom: $padding-s;
+    }
+
+    &__illustration {
+        border-radius: $padding-s;
+        background-color: lighten($fe-main, 85);
+        position: relative;
+        margin-bottom: $padding-l;
+     
+        &:after {
+            content: '';
+            display: block;
+            padding-top: 45%;
+        }
+    }
+
+    &__column-separator {
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: calc(50% - 1px);
+            width: 2px;
+            height: 70%;
+            top: 15%;
+            background-color: lighten($fe-main, 85);
+        }
+    }
+
+    &__descriptor {
+        margin-bottom: $padding-l;
+    }
+}

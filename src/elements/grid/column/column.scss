@@ -1,0 +1,13 @@
+@import '../../../scss/sizing';
+
+.zptn-grid{
+    &__column {
+        padding: 0 $padding-l;
+
+        @for $i from 1 through 12 {
+            &__s#{$i} {
+                width: #{100 * $i / 12} + '%';
+            }
+        }
+    }
+}

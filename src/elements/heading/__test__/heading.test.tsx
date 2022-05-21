@@ -21,4 +21,12 @@ describe('<Heading />', () => {
         const element = container.querySelector(mockType);
         expect(element).toBeInTheDocument();
     });
+
+    it("should pass className from props to dom element", () => {
+        const mockClassName = 'custom_class';
+        const mockText = 'Lorem ipsum';
+        const { container } = render(<Heading text={mockText} className={mockClassName} />);
+        const element = container.querySelector(`.${mockClassName}`);
+        expect(element).toBeInTheDocument();
+    })
 })

@@ -1,5 +1,7 @@
 import React from "react";
+import { composeClassName } from "../../utils/compose-class-name/compose-class-name";
 import './button.scss';
+import { buttonTestid as testids } from './button.testid';
 
 type ButtonRole = 'primary' | 'secondary'; 
 const BUTTON_ROLE_CLASS_NAMES: Record<ButtonRole, string> = {
@@ -19,7 +21,9 @@ export interface ButtonProps {
     disabled?: boolean;
     role?: ButtonRole;
     size?: ButtonSize;
-    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => {}
+    fullWidth?: boolean;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    testid?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({ 
@@ -27,12 +31,15 @@ export const Button: React.FC<ButtonProps> = ({
     disabled,
     role = 'primary',
     size = 'medium',
-    onClick
+    fullWidth,
+    onClick,
+    testid,
 }) => (
     <button 
         onClick={onClick} 
-        className={`zpt-button__main-element ${BUTTON_ROLE_CLASS_NAMES[role]} ${BUTTON_SIZE_CLASS_NAMES[size]}`}
+        className={`zpt-button__main-element ${BUTTON_ROLE_CLASS_NAMES[role]} ${BUTTON_SIZE_CLASS_NAMES[size]} ${fullWidth ? 'zpt-button__main-element__full-width' : ''}`}
         disabled={disabled}
+        data-testid={composeClassName([testid, testids.button()])}
     >
         {text}
     </button>
