@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/zptn-react/static/css/main.054287bb.css",
+    "main.js": "/zptn-react/static/js/main.ed6216d1.js",
+    "static/js/787.3bfa3721.chunk.js": "/zptn-react/static/js/787.3bfa3721.chunk.js",
+    "index.html": "/zptn-react/index.html",
+    "main.054287bb.css.map": "/zptn-react/static/css/main.054287bb.css.map",
+    "main.ed6216d1.js.map": "/zptn-react/static/js/main.ed6216d1.js.map",
+    "787.3bfa3721.chunk.js.map": "/zptn-react/static/js/787.3bfa3721.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.054287bb.css",
+    "static/js/main.ed6216d1.js"
+  ]
+}
